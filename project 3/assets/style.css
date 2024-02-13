@@ -10,13 +10,17 @@ body{
     display: flex;
     width: 100%;
     align-items: center;
-    padding: 50px 30px  0 30px;
+    justify-content: center;
+  
 }
 .main{
     padding: 10px;
     width: 33.33%;
-   
+    transition: transform 0.3s ease-in-out;
 }
+.main:hover{
+    transform: scale(1.1); /* Scale up to 120% on hover */
+  }
 .cross {
     text-align: end;
     padding: 20px 20px 0 0;
@@ -27,7 +31,7 @@ body{
     border-radius: 10px;
 }
 .cont{
-    padding: 60px;
+    padding: 60px 60px 40px 60px;
 }
 .cont h1{
     padding: 30px 0;
@@ -54,12 +58,15 @@ color:#828282 ;
 .cont button:hover{
     background-color: #46A67E;
 }
+.order{
+    padding-bottom: 20px;
+}
 .card {
     display: flex;
     background-color: #F0FFF5;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
 }
-.card:hover{transform: scale(40px);
+.card:hover{transform: scale(40px );
     animation: 0.5s ease-in-out ;}
 .card img{
     width: 65px;
@@ -67,7 +74,7 @@ color:#828282 ;
 }
 .text{
     display: flex;
-    padding: 10px 12px;
+    padding: 5px 12px;
 }
 .mid h1{
     padding: 20px 0;
@@ -94,3 +101,16 @@ color:#828282 ;
     color:#7A8F85 ;
     
 }
+.dots{
+    padding-top: 80px;
+}
+.dots img{padding: 10px;}
+@media only screen and (max-width: 450px){
+    .parent{
+        flex-direction: column;
+        padding: 5px 5px 0 5px;
+    }
+    .main{
+        width: 100%;
+    }
+    }
