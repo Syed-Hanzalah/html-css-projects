@@ -1,0 +1,286 @@
+@import url(./font/stylesheet.css);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: hellix, Helvetica, sans-serif;
+  background-image: linear-gradient(to bottom left, #ffffff, #f0f6ff);
+}
+nav {
+  display: flex;
+  padding: 60px 120px;
+  align-items: center;
+}
+nav .logo {
+  width: 50%;
+  padding: 20px 0;
+}
+nav .link {
+  text-align: right;
+  width: 50%;
+}
+nav ul {
+  display: flex;
+  display: inline-block;
+}
+nav ul li,
+link img {
+  display: inline;
+  padding: 20px;
+}
+.link img {
+  padding: 0 20px;
+}
+a {
+  text-decoration: none;
+  color: #111235;
+}
+.para {
+  padding: 50px 0;
+}
+section {
+  padding: 0 120px;
+  margin-bottom: 80px;
+}
+.outer {
+  display: flex;
+}
+.child {
+  width: 50%;
+}
+.title {
+  font-size: 72px;
+  padding-top: 100px;
+}
+span {
+  font-weight: bold;
+}
+.tag {
+  font-size: 48px;
+  padding-top: 20px;
+}
+
+.one {
+  padding: 40px 60px 40px 40px;
+  background-color: #f2f8ff;
+  border: opx solid;
+  border-radius: 50px;
+}
+.pad {
+  padding-left: 50px;
+}
+.third {
+  background-color: #8ebefb;
+}
+button {
+  padding: 15px 30px;
+  border-radius: 35px;
+  font-size: 18px;
+
+  color: #ffffff;
+  background-color: #4b5092;
+  border: 0px solid;
+}
+.sec3 {
+  font-size: 48px;
+  padding: 90px 0 10px 0;
+}
+.change {
+  color: #436baa;
+  background-color: #ffffff;
+}
+.seperate {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+}
+.seperate p {
+  font-size: 48px;
+}
+.child-one {
+  width: 70%;
+}
+.child-second {
+  width: 30%;
+}
+.card-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card {
+  width: 50%;
+  padding: 10px 5px;
+}
+.content {
+  background-color: #e4f0ff;
+  border: 0px solid;
+  border-radius: 30px;
+  padding: 50px 120px 50px 50px;
+}
+.color{
+    background-color: #727aef0f;
+}
+.content h1 {
+  padding-bottom: 25px;
+  padding-right: 90px;
+}
+footer {
+  padding: 0 120px 120px 120px;
+}
+.footer-main {
+  padding-top: 70px;
+  border-top: 2px solid #00000032;
+  display: flex;
+  justify-content: space-between;
+}
+.lists {
+  display: flex;
+}
+.lists ul li {
+  list-style: none;
+  padding: 10px 60px;
+}
+.input h2 {
+  padding: 10px 0;
+  font-size: 18px;
+}
+.input input {
+  padding: 10px;
+  border: 0px solid;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+.icon {
+  position: relative;
+}
+.icon img {
+  position: absolute;
+  transform: translate(-28px, 10px);
+}
+.display {
+  display: none;
+}
+@media only screen and (max-width: 420px) {
+  .link {
+    display: none;
+  }
+  nav {
+    padding: 0;
+    text-align: center;
+  }
+  nav .logo {
+    width: 100%;
+    padding: 20px 0;
+
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adjust the values as needed */
+  }
+  section {
+    padding: 0 20px;
+    margin-bottom: 80px;
+  }
+  .outer {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .child {
+    width: 100%;
+    text-align: center;
+  }
+  .child img {
+    width: 100%;
+  }
+  .title {
+    padding-top: 50px;
+    font-size: 64px;
+  }
+  button {
+    width: 70%;
+  }
+  .second .outer {
+    flex-direction: column;
+  }
+
+  .second,
+  .pad {
+    padding: 0;
+  }
+  .one {
+    padding: 40px 10px 40px 10px;
+    text-align: left;
+    border-radius: 0;
+  }
+  .one .para{
+    padding: 20px 0;
+  }
+  .child-one {
+    width: 100%;
+  }
+  .third .outer .child .para{
+    padding: 30px 0;
+  }
+  .third .outer .child img{
+    padding-top: 60px;
+  }
+
+  .card-content {
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+  }
+  .content {
+    padding: 35px 50px 35px 40px;
+  }
+  .content h1 {
+    padding-right: 40px;
+  }
+  .seperate {
+    flex-direction: column;
+  }
+  .seperate button {
+    margin: 0 auto;
+  }
+  footer {
+    padding: 60px 0;
+  }
+  .footer-main {
+    padding-top: 70px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .lists {
+    flex-direction: column;
+  }
+  .lists ul li {
+    padding: 20px 60px;
+  }
+  .copyright {
+    text-align: center;
+    padding-top: 40px;
+  }
+  .display {
+    padding-top:30px ;
+    display: block;
+    text-align: center;
+  }
+  .display img{
+    width: 100%;
+  }
+
+  .remove,
+  .child-second {
+    display: none;
+  }
+  .but{
+    margin: 0 auto;
+  }
+  .input input{
+    width: 60%;
+  }
+  footer{
+    padding-top: 0;
+  }
+}
